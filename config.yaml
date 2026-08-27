@@ -1,0 +1,77 @@
+# Especificação do radar. Editar isto é o que ajusta o agente — o código não muda.
+
+escolaridade: [medio]          # perto da formatura: [medio, superior]
+
+estagio:
+  # Empresas alvo. O ranking dá bônus para essas.
+  empresas_alvo:
+    - iFood
+    - Amazon
+    - Google
+    - Huawei
+    - BTG Pactual
+    - XP Inc
+    - Nubank
+    - Itau
+    - Mercado Livre
+    - Embraer
+    - Serpro
+    - Dell
+
+  # Termos usados na busca das fontes.
+  termos_busca:
+    - estagio desenvolvimento
+    - estagio software
+    - estagio backend
+    - estagio front-end
+    - estagio QA
+    - estagio dados
+    - programa de estagio ti
+
+  # Filtro de palavras-chave (estágio 1, barato). Basta uma para passar.
+  keywords_positivas:
+    [python, javascript, typescript, react, next, node, java, "c++", sql,
+     backend, frontend, "full stack", fullstack, qa, teste, automacao,
+     api, git, dados, software, desenvolvimento, engenharia]
+
+  # Rejeita imediatamente.
+  keywords_negativas:
+    [vendas, comercial, telemarketing, "suporte n1", "help desk", recepcao,
+     administrativo, juridico, contabil, marketing, "nao remunerado"]
+
+  formatura_prevista: "2028-07"
+  peso_efetivacao: alto        # sinais: "efetivacao", "programa de estagio", duracao >= 12 meses
+
+  local:
+    prioridade: [DF, Brasilia, Distrito Federal]
+    aceitar_fora_do_df_apenas_se_remoto: true
+
+concursos:
+  orgaos:
+    - Caixa Economica Federal
+    - Banco do Brasil
+    - BRB
+    - Correios
+    - Camara Legislativa do Distrito Federal
+    - Camara dos Deputados
+    - Metro-DF
+    - Senado Federal
+
+  termos_busca:
+    - edital concurso publico nivel medio
+    - abertura de concurso publico
+    - edital de abertura tecnico bancario
+    - edital de abertura escriturario
+
+  keywords_negativas:
+    [militar, policia militar, bombeiro, "nivel superior completo",
+     "diploma de nivel superior", medico, enfermeiro, professor]
+
+  salario_minimo: 3500
+  alerta_prazo_dias: 7         # avisa quando a inscricao fecha em <= N dias
+
+ranking:
+  usar_llm: true
+  modelo: claude-haiku-4-5
+  nota_minima: 6               # abaixo disso nao entra no relatorio
+  max_itens_por_secao: 10
