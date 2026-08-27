@@ -1,10 +1,10 @@
 # radar-vagas
 
-Agente que busca estágios e concursos toda segunda de manhã e manda um
-relatório no Telegram.
+Agente que busca estágios e concursos toda segunda de manhã e gera um
+relatório em `relatorios/AAAA-MM-DD.md`.
 
 ```
-coletores → filtro de regras → dedup → ranking LLM → relatório → Telegram
+coletores → filtro de regras → dedup → ranking LLM → relatório → arquivo .md 
                                  ↑
                           state/seen.json
 ```
@@ -15,13 +15,13 @@ coletores → filtro de regras → dedup → ranking LLM → relatório → Tele
 |---|---|
 | `config.yaml` | **a especificação** — é aqui que você ajusta o agente |
 | `radar/models.py` | `Oportunidade`, o formato normalizado de todo coletor |
-| `radar/coletores/gupy.py` | estágios (fonte principal) |
+| `radar/coletores/vagas.py` | estágios via jobspy (Indeed) |
 | `radar/coletores/dou.py` | editais federais no Diário Oficial da União |
-| `radar/coletores/querido_diario.py` | editais do DF via API aberta |
 | `radar/filtros.py` | corte por palavra-chave e geografia (barato) |
 | `radar/ranking.py` | nota 0–10 pelo LLM (caro, só no que sobrou) |
 | `radar/dedup.py` | estado do que já foi reportado |
-| `radar/relatorio.py` | render HTML do Telegram |
+| `radar/relatorio.py` | render markdown (e HTML, se usar Telegram) |
+| `radar/saida.py` | grava o .md e escreve no resumo do Actions |
 | `.github/workflows/radar.yml` | cron de segunda, 08:00 BRT |
 
 ## Passo a passo
@@ -51,7 +51,7 @@ enquanto ajusta o `config.yaml`.
 Para testar um coletor de cada vez:
 
 ```bash
-python -m radar --fonte gupy --dry-run --sem-llm -v
+python -m radar --fonte vagas --dry-run --sem-llm -v
 ```
 
 ### 3. Calibrar o filtro
@@ -63,23 +63,20 @@ passa lixo demais, ou corta vaga boa. O log mostra `filtro de regras: N -> M`.
 - Vaga boa sumindo → rode com `-v`, veja se ela chegou a ser coletada. Se não
   chegou, o problema é o coletor, não o filtro.
 
-### 4. Bot do Telegram
-
-1. Fale com [@BotFather](https://t.me/BotFather) → `/newbot` → guarde o token
-2. Mande qualquer mensagem para o seu bot
-3. Pegue o chat ID:
+### 4. Gerar o relatório
 
 ```bash
-curl "https://api.telegram.org/bot<SEU_TOKEN>/getUpdates"
+python -m radar --sem-llm
 ```
 
-Procure `"chat":{"id":123456789`.
+Grava dois arquivos:
 
-```bash
-export TELEGRAM_TOKEN=...
-export TELEGRAM_CHAT_ID=...
-python -m radar --sem-llm   # execução real, sem LLM
-```
+- `relatorios/2026-09-01.md` — o histórico, um por semana
+- `relatorios/ultimo.md` — sempre o mais recente, bom para favoritar no GitHub
+
+Quando roda no Actions, o mesmo texto aparece no resumo da execução: aba
+`Actions` → clique no run → o relatório está renderizado na própria página.
+Não precisa baixar nada.
 
 ### 5. Ligar o LLM
 
@@ -91,13 +88,13 @@ python -m radar --dry-run
 Custo é baixo porque só o que passou pelo filtro vai para o modelo. Se
 `ANTHROPIC_API_KEY` faltar, o agente roda mesmo assim, com nota neutra.
 
-### 6. Secrets no GitHub
+### 6. Secret no GitHub
 
-`Settings → Secrets and variables → Actions → New repository secret`:
+Só um, e ele é opcional:
 
-- `TELEGRAM_TOKEN`
-- `TELEGRAM_CHAT_ID`
-- `ANTHROPIC_API_KEY`
+`Settings → Secrets and variables → Actions → New repository secret`
+
+- `ANTHROPIC_API_KEY` — sem ele o radar funciona, só não ordena por relevância
 
 ### 7. Testar no CI antes do cron
 
@@ -112,11 +109,13 @@ O cron já está ativo: `0 11 * * 1` = 11:00 UTC = 08:00 em Brasília.
 
 Isso não é pessimismo, é o ciclo de vida normal de um agregador:
 
-1. **Gupy** — endpoint não documentado. Se voltar zero itens, abra
-   `portal.gupy.io`, aba Network, faça uma busca e confira o endpoint e os
-   nomes dos campos. Ajuste `ENDPOINT` e `_para_oportunidade`.
-2. **DOU** — o parser depende de `<script id="params">`. Se o log disser que
-   não encontrou, o layout do in.gov.br mudou.
+1. **vagas (jobspy)** — quando um portal muda, quem conserta é o mantenedor
+   da lib. Rode `pip install -U python-jobspy` antes de investigar.
+   Só o Indeed está ativo — ver "Fontes descartadas". O Indeed às vezes
+   bloqueia IP de datacenter; se falhar no Actions mas funcionar local, é isso.
+2. **DOU** — o parser depende de `<script id="params">` na página
+   `/leiturajornal?...&secao=do3`. Se o log disser que não encontrou, o layout
+   mudou. Atenção: a seção **do3** é a que tem edital; a do1 é só ato normativo.
 3. **Extração de prazo** — heurística de regex sobre texto de edital. Acerta a
    maioria, erra em redação incomum. Por isso o relatório sempre linka o
    original.
@@ -138,3 +137,22 @@ relatório com um `ERROR` no log do Actions.
 - Adicionar `superior` em `escolaridade` perto da formatura, o que abre
   Técnico e Analista Judiciário
 - Trocar `seen.json` por SQLite se o arquivo passar de alguns milhares de linhas
+- Notificação ativa, se um dia o arquivo no repo não bastar: `python -m radar
+  --destino telegram` já funciona, só precisa de `TELEGRAM_TOKEN` e
+  `TELEGRAM_CHAT_ID` (bot criado no @BotFather)
+
+## Fontes descartadas
+
+Validado contra os serviços reais em 27/08/2026. Não reintroduza nenhuma
+destas sem antes rodar uma chamada e ver dado voltando.
+
+| Fonte | Por quê |
+|---|---|
+| **Querido Diário** | O DF existe na base (`territory_ids=5300108`, 1455 diários), mas a coleta **parou em 2025-03-28**: `published_since=2025-04-01` devolve 0. Para um radar de editais abertos, tudo que há ali já venceu. |
+| **Glassdoor** (jobspy) | HTTP 400 `Glassdoor: location not parsed`. Testado com `Brasília, DF`, `Brasilia`, `Brazil`, `Brasilia, Brazil` e `São Paulo, Brazil` — os cinco deram 0 linhas. |
+| **Google Jobs** (jobspy) | 0 linhas, com `search_term` sozinho e com `google_search_term` em linguagem natural. |
+| **Gupy** | `portal.api.gupy.io/api/job` devolve 404; a API documentada exige token Bearer de empregador. |
+| **LinkedIn** | ToS proíbe scraping e o bloqueio por IP é agressivo. Decisão de projeto, não limitação técnica. |
+
+Alternativa pendente para editais distritais (DODF/BRB/CLDF): raspar o portal
+oficial do DODF. Não foi implementado — precisa de validação de acesso antes.

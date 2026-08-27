@@ -9,6 +9,7 @@ import yaml
 RAIZ = Path(__file__).resolve().parent.parent
 CAMINHO_CONFIG = RAIZ / "config.yaml"
 CAMINHO_ESTADO = RAIZ / "state" / "seen.json"
+PASTA_RELATORIOS = RAIZ / "relatorios"
 
 
 def carregar(caminho: Path = CAMINHO_CONFIG) -> dict[str, Any]:
