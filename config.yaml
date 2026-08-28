@@ -100,6 +100,7 @@ estagio:
     [vendas, comercial, telemarketing, "suporte n1", "suporte tecnico",
      "help desk", helpdesk, recepcao, administrativo, juridico, contabil,
      marketing, recursos humanos, "nao remunerado",
+     "atendimento ao cliente", "customer support", "customer success", "customer onboarding", "application support", "applications support", "product design", "ux design", "ui design",
      # hardware / eletrica — fora do escopo
      hardware, eletronica, "engenharia eletrica", eletrotecnica, firmware,
      "sistemas embarcados", pcb, fpga, vhdl, cabeamento,
