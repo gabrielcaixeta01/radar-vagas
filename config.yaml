@@ -171,7 +171,7 @@ concursos:
   alerta_prazo_dias: 7         # avisa quando a inscricao fecha em <= N dias
 
 ranking:
-  usar_llm: true
+  usar_llm: false
   modelo: claude-haiku-4-5
   nota_minima: 6               # abaixo disso nao entra no relatorio
   max_itens_por_secao: 25
