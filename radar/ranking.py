@@ -19,35 +19,65 @@ from .models import Oportunidade
 
 log = logging.getLogger(__name__)
 
-PROMPT_ESTAGIO = """Voce avalia vagas de estagio para um estudante de \
-Engenharia de Computacao na UnB, formatura prevista em {formatura}. Ele \
-prioriza vagas com chance real de efetivacao.
+PROMPT_ESTAGIO = """Voce avalia vagas de entrada (estagio, trainee ou junior) \
+para um estudante de Engenharia de Computacao na UnB, 7o semestre, formatura \
+prevista em {formatura}.
+
+Perfil dele:
+- So SOFTWARE. Hardware, eletronica, firmware, embarcados, redes fisicas e \
+suporte tecnico sao descarte imediato.
+- Trilhas por ordem de interesse: {prioridades}.
+- Mora em Brasilia e NAO se muda para Sao Paulo. Vaga presencial fora do DF \
+nao serve, por melhor que seja; remota serve.
+- Vaga internacional so serve se for remota e contratar de fato quem mora no \
+Brasil (se exige visto, autorizacao de trabalho no exterior ou presenca no \
+pais, nota baixa).
+- Prioriza chance real de efetivacao.
 
 Responda APENAS com JSON, sem markdown e sem texto em volta:
 {{"nota": <0-10>, "motivo": "<uma frase curta em portugues>", \
 "efetivacao": <true|false|null>}}
 
 Criterios de nota:
-- 9-10: empresa alvo, stack compativel, programa com efetivacao declarada
-- 7-8: stack compativel e duracao >= 12 meses
-- 4-6: relacionada a tecnologia mas com encaixe fraco
-- 0-3: fora da area, ou exige formatura anterior a {formatura}
+- 9-10: trilha prioritaria (dados/ML ou quant/financeiro), empresa alvo, \
+local compativel (DF ou remoto), efetivacao ou vaga CLT de entrada
+- 7-8: software em geral ou tecnologia em instituicao financeira, local \
+compativel, duracao >= 12 meses
+- 4-6: tecnologia mas encaixe fraco (TI generalista, suporte disfarcado de \
+dev), ou remoto duvidoso
+- 0-3: hardware/eletronica/embarcados/infra fisica, presencial fora do DF, \
+exige visto ou residencia no exterior, ou exige formatura anterior a {formatura}
 
 VAGA:
 {texto}"""
 
 PROMPT_CONCURSO = """Voce avalia publicacoes de diario oficial para um \
-estudante que hoje so pode concorrer a cargos de NIVEL MEDIO (esta no 7o \
-semestre, ainda sem diploma). Ele busca salario inicial acima de R$ {minimo}.
+estudante de Engenharia de Computacao na UnB, 7o semestre, formatura \
+prevista em {formatura}. Salario inicial de interesse: acima de R$ {minimo}.
+
+O que interessa a ele, nesta ordem:
+1. NIVEL SUPERIOR em carreira de TECNOLOGIA DA INFORMACAO (analista de \
+sistemas, desenvolvimento, dados, seguranca) ou do setor FINANCEIRO \
+(Banco Central, CVM, BNDES, area economico-financeira), desde que a posse \
+tenda a ocorrer a partir de {formatura} — edital recem-aberto, prazo longo \
+ou cadastro de reserva.
+2. NIVEL MEDIO apenas em banco publico (Caixa, Banco do Brasil, BRB): \
+tecnico bancario, escriturario, agente comercial. Esses ele pode fazer ja, \
+sem diploma.
+
+Cargo de nivel medio fora de banco, ou cargo de nivel superior em area que \
+nao e TI nem financeira, nao interessa.
 
 Responda APENAS com JSON, sem markdown e sem texto em volta:
 {{"nota": <0-10>, "motivo": "<uma frase curta em portugues>", \
 "nivel_medio": <true|false|null>}}
 
 Criterios de nota:
-- 0-2: nao e edital de concurso, ou so tem cargos de nivel superior
-- 4-6: edital de nivel medio, mas salario baixo ou orgao fora do interesse
-- 7-10: edital com cargo de nivel medio, salario acima do minimo, orgao federal ou do DF
+- 0-2: nao e edital de abertura, ou nenhum cargo se encaixa nos dois casos acima
+- 4-6: encaixa, mas salario baixo, orgao fora do interesse, ou nivel superior \
+com posse claramente antes de {formatura}
+- 7-10: edital de abertura de TI/financeiro de nivel superior compativel com \
+o prazo dele, ou de nivel medio em banco publico, com salario acima do minimo
 
 PUBLICACAO:
 {texto}"""
@@ -81,10 +111,12 @@ def rankear(itens: list[Oportunidade], cfg: dict) -> list[Oportunidade]:
         if o.tipo == "estagio":
             prompt = PROMPT_ESTAGIO.format(
                 formatura=cfg["estagio"]["formatura_prevista"],
+                prioridades="; ".join(cfg["estagio"]["prioridades"]),
                 texto=o.texto_para_analise())
         else:
             prompt = PROMPT_CONCURSO.format(
                 minimo=cfg["concursos"]["salario_minimo"],
+                formatura=cfg["estagio"]["formatura_prevista"],
                 texto=o.texto_para_analise())
 
         try:

@@ -39,6 +39,10 @@ def _passa_estagio(o: Oportunidade, cfg: dict) -> bool:
     est = cfg["estagio"]
     texto = normalizar(o.texto_para_analise())
 
+    # Nivel do cargo sai do titulo, nao do texto todo: a descricao cita
+    # "senior"/"lead" o tempo todo sem que a vaga seja senior.
+    if _tem(normalizar(o.titulo), est.get("titulos_negativos", [])):
+        return False
     if _tem(texto, est["keywords_negativas"]):
         return False
     if not _tem(texto, est["keywords_positivas"]):

@@ -105,12 +105,12 @@ def montar(novos: list[Oportunidade], fechando: list[Oportunidade],
 
     if formato == "html":
         partes = [f"<b>📡 Radar — {hoje.day} de {MESES[hoje.month]}</b>"]
-        partes += _secao_html("🎯 Estágios", estagios, limite)
+        partes += _secao_html("🎯 Estágios, trainee e júnior", estagios, limite)
         partes += _secao_html("📋 Concursos", concursos, limite)
         partes += _secao_html("⏰ Prazo fechando", fechando, limite)
     else:
         partes = [f"# 📡 Radar — {hoje.day} de {MESES[hoje.month]} de {hoje.year}"]
-        partes += _secao_md("🎯 Estágios", estagios, limite)
+        partes += _secao_md("🎯 Estágios, trainee e júnior", estagios, limite)
         partes += _secao_md("📋 Concursos", concursos, limite)
         partes += _secao_md("⏰ Prazo fechando", fechando, limite)
 

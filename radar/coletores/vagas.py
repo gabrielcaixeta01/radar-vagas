@@ -1,4 +1,4 @@
-"""Vagas de estagio via python-jobspy.
+"""Vagas de estagio, trainee e junior via python-jobspy.
 
 Conferido contra o servico real em 27/08/2026, rodando scrape_jobs de verdade:
 
@@ -63,7 +63,12 @@ class VagasColetor(Coletor):
         est = self.cfg["estagio"]
         quadros = []
 
-        for termo in est["termos_busca"]:
+        # Termos em ingles rodam na mesma busca: o Indeed nao tem escopo
+        # "worldwide" (validado 28/08/2026, 0 linhas), entao o alcance
+        # internacional e o que a multinacional publica para o Brasil.
+        termos = list(est["termos_busca"]) + list(est.get("termos_busca_ingles", []))
+
+        for termo in termos:
             for local, remoto in BUSCAS:
                 try:
                     df = scrape_jobs(
@@ -96,6 +101,12 @@ class VagasColetor(Coletor):
 
         if "job_url" in df.columns:
             df = df.drop_duplicates(subset=["job_url"])
+        # O Indeed republica a mesma vaga com jk diferente por cidade. Sem
+        # isto o relatorio vem com a mesma linha quatro vezes.
+        if {"title", "company"} <= set(df.columns):
+            chave = (df["title"].astype(str).str.strip().str.lower()
+                     + "|" + df["company"].astype(str).str.strip().str.lower())
+            df = df[~chave.duplicated()]
         log.info("vagas: %d linhas apos dedup", len(df))
 
         faltando = [c for c in COLUNAS_ESPERADAS if c not in df.columns]

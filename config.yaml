@@ -1,43 +1,118 @@
-# Especificação do radar. Editar isto é o que ajusta o agente — o código não muda.
+# Especificacao do radar. Editar isto e o que ajusta o agente — o codigo nao muda.
+#
+# Perfil: Engenharia de Computacao / UnB, 7o semestre (ago-2026).
+# Interesse: SOFTWARE (tecnologia) e MERCADO FINANCEIRO. Hardware fora.
+# Prioridade dentro de software: dados/ML e quant/financeiro.
+# Geografia: mora em Brasilia e NAO vai para SP presencial.
 
-escolaridade: [medio]          # perto da formatura: [medio, superior]
+escolaridade: [medio, superior]   # 7o semestre: nivel medio ja; superior com posse pos-formatura
 
 estagio:
-  # Empresas alvo. O ranking dá bônus para essas.
+  # Trilhas prioritarias, em ordem. Entra no prompt do ranking.
+  prioridades:
+    - dados / machine learning
+    - quantitativo / mercado financeiro
+    - backend / engenharia de software
+    - frontend / full stack
+
+  # Tambem aceita vaga de entrada CLT, nao so estagio.
+  niveis: [estagio, trainee, junior]
+
+  # Empresas alvo. O ranking da bonus para essas.
   empresas_alvo:
+    # tecnologia
     - iFood
     - Amazon
     - Google
+    - Microsoft
+    - Meta
+    - Mercado Livre
+    - Nubank
+    - Serpro
+    - Dataprev
+    - Dell
     - Huawei
+    # financas / mercado
     - BTG Pactual
     - XP Inc
-    - Nubank
     - Itau
-    - Mercado Livre
-    - Embraer
-    - Serpro
-    - Dell
+    - Itau BBA
+    - Bradesco
+    - Banco do Brasil
+    - Caixa
+    - BRB
+    - B3
+    - Stone
+    - PagBank
+    - C6 Bank
+    - Banco Inter
+    - Warren
+    - Genial Investimentos
+    - Safra
+    - Banco Central do Brasil
 
   # Termos usados na busca das fontes.
   termos_busca:
-    - estagio desenvolvimento
-    - estagio software
+    - estagio engenharia de software
+    - estagio desenvolvimento de software
     - estagio backend
     - estagio front-end
-    - estagio QA
-    - estagio dados
+    - estagio full stack
+    - estagio ciencia de dados
+    - estagio engenharia de dados
+    - estagio machine learning
+    - estagio QA automacao
+    - estagio cloud devops
+    - estagio tecnologia banco
+    - estagio mercado financeiro tecnologia
+    - estagio analise quantitativa
     - programa de estagio ti
+    - trainee tecnologia
+    - trainee dados
+    - desenvolvedor junior
+    - analista de dados junior
+    - programa trainee banco
 
-  # Filtro de palavras-chave (estágio 1, barato). Basta uma para passar.
+  # Buscas em ingles: pegam vagas de multinacional e remotas globais que
+  # aparecem listadas para o Brasil. O Indeed nao aceita busca "worldwide"
+  # (validado 28/08/2026: devolve 0 linhas), entao esse e o alcance possivel.
+  termos_busca_ingles:
+    - software engineer intern
+    - data science intern
+    - data engineer intern
+    - quantitative analyst intern
+    - junior software engineer remote
+
+  # Filtro de palavras-chave (estagio 1, barato). Basta uma para passar.
   keywords_positivas:
-    [python, javascript, typescript, react, next, node, java, "c++", sql,
-     backend, frontend, "full stack", fullstack, qa, teste, automacao,
-     api, git, dados, software, desenvolvimento, engenharia]
+    [python, javascript, typescript, react, next, node, java, kotlin, "c#",
+     "c++", go, rust, sql, backend, frontend, "full stack", fullstack, api,
+     rest, microsservico, git, docker, kubernetes, cloud, aws, azure, gcp,
+     devops, qa, teste automatizado, automacao, dados, data, analytics,
+     machine learning, "aprendizado de maquina", ciencia de dados, etl,
+     software, desenvolvimento, engenharia de software, ti,
+     # trilha financas
+     fintech, banco, financeiro, investimentos, mercado de capitais,
+     quantitativo, quant, risco, credito, trading, pagamentos, open finance]
 
-  # Rejeita imediatamente.
+  # Rejeita imediatamente. Inclui a trilha de hardware, que esta fora.
   keywords_negativas:
-    [vendas, comercial, telemarketing, "suporte n1", "help desk", recepcao,
-     administrativo, juridico, contabil, marketing, "nao remunerado"]
+    [vendas, comercial, telemarketing, "suporte n1", "suporte tecnico",
+     "help desk", helpdesk, recepcao, administrativo, juridico, contabil,
+     marketing, recursos humanos, "nao remunerado",
+     # hardware / eletrica — fora do escopo
+     hardware, eletronica, "engenharia eletrica", eletrotecnica, firmware,
+     "sistemas embarcados", pcb, fpga, vhdl, cabeamento,
+     "manutencao de computadores", "tecnico em informatica",
+     "automacao industrial", clp, mecatronica, "engenharia mecanica",
+     "engenharia civil"]
+
+  # Checado SO no titulo da vaga (na descricao "senior" aparece por acidente,
+  # ex.: "reporta ao desenvolvedor senior"). Corta vaga que nao e de entrada.
+  titulos_negativos:
+    [senior, "sênior", " sr", pleno, especialista, "tech lead", lead,
+     coordenador, gerente, supervisor, "head of", principal, staff,
+     arquiteto, "iii", "iv"]
 
   formatura_prevista: "2028-07"
   peso_efetivacao: alto        # sinais: "efetivacao", "programa de estagio", duracao >= 12 meses
@@ -47,31 +122,56 @@ estagio:
     aceitar_fora_do_df_apenas_se_remoto: true
 
 concursos:
+  # Orgaos com carreira de TI ou de financas. Sao esses que o filtro exige.
   orgaos:
-    - Caixa Economica Federal
+    # bancos publicos / financeiro
+    - Banco Central do Brasil
     - Banco do Brasil
+    - Caixa Economica Federal
     - BRB
-    - Correios
-    - Camara Legislativa do Distrito Federal
+    - BNDES
+    - CVM
+    - Susep
+    - Receita Federal
+    # TI federal
+    - Serpro
+    - Dataprev
+    - Ministerio da Gestao
+    - Ministerio da Fazenda
+    # controle e legislativo (carreiras de TI bem pagas, DF)
+    - Tribunal de Contas da Uniao
+    - TCU
+    - Controladoria-Geral da Uniao
+    - CGU
     - Camara dos Deputados
-    - Metro-DF
     - Senado Federal
+    - Camara Legislativa do Distrito Federal
+    - Tribunal de Justica do Distrito Federal
+    - TJDFT
+    - Superior Tribunal de Justica
+    - Tribunal Superior Eleitoral
+    # DF
+    - Metro-DF
+    - Codeplan
+    - Correios
 
   termos_busca:
-    - edital concurso publico nivel medio
-    - abertura de concurso publico
-    - edital de abertura tecnico bancario
-    - edital de abertura escriturario
+    - edital abertura concurso publico analista de tecnologia da informacao
+    - edital abertura concurso publico tecnico bancario
+    - edital abertura concurso publico escriturario
+    - edital de abertura analista de sistemas
+    - edital abertura concurso publico ciencia de dados
 
   keywords_negativas:
-    [militar, policia militar, bombeiro, "nivel superior completo",
-     "diploma de nivel superior", medico, enfermeiro, professor]
+    [militar, policia militar, bombeiro, medico, enfermeiro, odontologo,
+     professor, magisterio, docente, juiz, promotor, defensor,
+     engenharia civil, agronomo, veterinario]
 
-  salario_minimo: 3500
+  salario_minimo: 4500
   alerta_prazo_dias: 7         # avisa quando a inscricao fecha em <= N dias
 
 ranking:
   usar_llm: true
   modelo: claude-haiku-4-5
   nota_minima: 6               # abaixo disso nao entra no relatorio
-  max_itens_por_secao: 10
+  max_itens_por_secao: 25
