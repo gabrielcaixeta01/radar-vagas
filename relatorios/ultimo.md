@@ -1,56 +1,53 @@
-# 📡 Radar — 7 de setembro de 2026
+# 📡 Radar — 14 de setembro de 2026
 
-## 🎯 Estágios, trainee e júnior (26)
+## 🎯 Estágios, trainee e júnior (22)
 
-- **[Estágio em Gestão de Produtos](https://br.indeed.com/viewjob?jk=76b15e48a1e7437b)**  
-  `` · Rio de Janeiro, RJ, BR · remoto · nota 6
-- **[|ENCANTECH| Estágio em Dados (Advanced Analytics)](https://br.indeed.com/viewjob?jk=d3d56f659bc0ca07)**  
-  `` · Porto Alegre, RS, BR · remoto · nota 6
-- **[Estágio em Representação de Mercado - Negociação](https://br.indeed.com/viewjob?jk=2e81f076d027f69c)**  
-  `` · São Paulo, SP, BR · remoto · nota 6
-- **[Estágio em Tecnologia](https://br.indeed.com/viewjob?jk=1ef65cf360317f5c)**  
-  `` · Rio de Janeiro, RJ, BR · nota 6
-- **[Estagiário(a) de Finanças | Dados e Automação](https://br.indeed.com/viewjob?jk=ab4c9fd8aefa6553)**  
-  `CIX Citizen Experience` · São Paulo, SP, BR · remoto · nota 6
-- **[Analista de Dados Jr](https://br.indeed.com/viewjob?jk=924b491d9d7f0cac)**  
-  `GRUPO SEVEN` · Brasília, DF, BR · nota 6
-- **[Analista de Projetos Júnior](https://br.indeed.com/viewjob?jk=ece429ba6cd2352a)**  
-  `Gol Linhas Aéreas` · São Paulo, SP, BR · remoto · nota 6
-- **[Software Engineer in Test (SDET) Specialist I - Brazil](https://br.indeed.com/viewjob?jk=6fad78ab527e4714)**  
-  `Housecall Pro` · Remoto, BR · remoto · nota 6
-- **[ESTAGIO-GRADUAÇÃO EM ENGENHARIA DE SOFTWARE / ANÁLISE DE SISTEMAS / SISTEMAS PARA INTERNET](https://br.indeed.com/viewjob?jk=152237232057e25a)**  
-  `INTEGRAR RS` · Porto Alegre, RS, BR · nota 6
-- **[Engenheiro de Software | AI Engineer](https://br.indeed.com/viewjob?jk=404eb29502a7fbbf)**  
-  `MJV Innovation` · Remoto, BR · remoto · nota 6
-- **[Estágio em Qualidade de Software (QA)](https://br.indeed.com/viewjob?jk=405e976801746942)**  
+- **[Estágio – Suporte a Operações de Tecnologia da Informação](https://br.indeed.com/viewjob?jk=ef0bde154713c4e3)**  
+  `` · Brasília, DF, BR · nota 6
+- **[Analista de ERP](https://br.indeed.com/viewjob?jk=36c13dbda87ff483)**  
+  `` · Remoto, BR · remoto · nota 6
+- **[Software Engineer/Dev Fullstack](https://br.indeed.com/viewjob?jk=2babc2417e254a6a)**  
+  `` · Curitiba, PR, BR · nota 6
+- **[Desenvolvedor de Software Jr](https://br.indeed.com/viewjob?jk=8f303f6a6051b752)**  
+  `AL consultoria em RH` · Petrópolis, RJ, BR · nota 6
+- **[Analista Júnior de Telecomunicações](https://br.indeed.com/viewjob?jk=aee4b5957683e02f)**  
+  `Accenture` · Rio de Janeiro, RJ, BR · remoto · nota 6
+- **[Vaga de Estágio - Tecnologia da Informação - DF2026000436](https://br.indeed.com/viewjob?jk=a5014d2cbd0c152d)**  
+  `Agiel` · DF, BR · nota 6
+- **[Analista de Negócios de Integração – Junior](https://br.indeed.com/viewjob?jk=bc0d7a61350a6583)**  
+  `Animati` · Remoto, BR · remoto · nota 6
+- **[DBA SQL Server Pl-Sr](https://br.indeed.com/viewjob?jk=6b7391a918052b7c)**  
+  `GLOBALSYS.COM.BR` · Remoto, BR · remoto · nota 6
+- **[Designer Instrucional Júnior (CLT) | Remoto](https://br.indeed.com/viewjob?jk=21c6f390d5ff5fdf)**  
+  `Gran` · Remoto, BR · remoto · nota 6
+- **[Estágio em Growth](https://br.indeed.com/viewjob?jk=c1078d372b26b10a)**  
+  `Gringo & Zapay` · Remoto, BR · remoto · nota 6
+- **[Desenvolvedor Fullstack VTEX Júnior](https://br.indeed.com/viewjob?jk=e7bf0a8299c0af96)**  
+  `Growdev` · Remoto, BR · remoto · nota 6
+- **[Profissional Analista de Qualidade Júnior - Remoto](https://br.indeed.com/viewjob?jk=e0a3fe2c3f01a4dd)**  
+  `Luby` · Remoto, BR · remoto · nota 6
+- **[Profissional Fullstack (IA/Javascript) Trainee/Júnior - Remoto](https://br.indeed.com/viewjob?jk=553ff80e554c6463)**  
+  `Luby` · Remoto, BR · remoto · nota 6
+- **[Desenvolvedor Full Stack JR (JAVA)](https://br.indeed.com/viewjob?jk=2ff090ae48f266d9)**  
   `Nexti` · Remoto, BR · remoto · nota 6
-- **[Desenvolvedor(a) Backend Júnior — APIs e Node.js](https://br.indeed.com/viewjob?jk=3abe4c6cf077baaf)**  
-  `ORBITE CONSULTING` · Remoto, BR · remoto · nota 6
-- **[Assistente QA](https://br.indeed.com/viewjob?jk=ec8589e52e29d41c)**  
-  `Overlabs` · São Paulo, SP, BR · remoto · nota 6
-- **[PESSOA DESENVOLVEDORA C# JÚNIOR \[PRESENCIAL\]](https://br.indeed.com/viewjob?jk=625abaedda76b827)**  
-  `Pitang` · Recife, PE, BR · remoto · nota 6
-- **[12331001 - DESENVOLVEDOR JÚNIOR](https://br.indeed.com/viewjob?jk=b7a0e9f60dd20b5a)**  
-  `Quality Digital` · Remoto, BR · remoto · nota 6
-- **[AI Product Engineer](https://br.indeed.com/viewjob?jk=2d10dc3bbadb4c51)**  
-  `Quality Digital` · Remoto, BR · remoto · nota 6
-- **[Estágio em Ciência da Computação - EBSERH/DF](https://br.indeed.com/viewjob?jk=a485154f722072eb)**  
-  `Recruta Easy` · Brasília, DF, BR · nota 6
-- **[Analista de Qualidade Júnior](https://br.indeed.com/viewjob?jk=9cee23d18f3528b4)**  
+- **[Analista Júnior de Automação com IA e Agentes](https://br.indeed.com/viewjob?jk=c07d3d4b05fce4de)**  
+  `OSC MARITIMO` · Rio de Janeiro, RJ, BR · nota 6
+- **[Estágio em Desenvolvimento de Software](https://br.indeed.com/viewjob?jk=2f531ff592e1727b)**  
+  `PONTOTEL` · São Paulo, SP, BR · remoto · nota 6
+- **[Desenvolvedor Full Stack - JR](https://br.indeed.com/viewjob?jk=e32f01d9f6566b0e)**  
+  `ProThera Inc` · Remoto, BR · remoto · nota 6
+- **[Cientista de Dados Júnior](https://br.indeed.com/viewjob?jk=edb37a6202f7942d)**  
   `STARTA` · Porto Alegre, RS, BR · remoto · nota 6
-- **[AI Platform Engineer | LLM, Python e Databricks](https://br.indeed.com/viewjob?jk=1950accd97fba1ce)**  
-  `Smarthis` · São José dos Campos, SP, BR · remoto · nota 6
-- **[Programa de estágio - TI](https://br.indeed.com/viewjob?jk=880e7994cddc3c0b)**  
-  `SolvePlan` · Remoto, BR · remoto · nota 6
-- **[\[Tech\] Analista Desenvolvedor ADVPL Júnior](https://br.indeed.com/viewjob?jk=682e26aa106392af)**  
-  `TOTVS` · Remoto, BR · remoto · nota 6
-- **[Estagiário(a) (MapBiomas) - Brasília/DF (132347)](https://br.indeed.com/viewjob?jk=63e7a35a717ae0e2)**  
-  `Trabalhe Conosco` · Brasília, DF, BR · nota 6
-- **[Pessoa Desenvolvedora Full Stack Júnior com foco em Front-End e Cloud Azure (REMOTO)](https://br.indeed.com/viewjob?jk=044a9e2937dd1ddc)**  
-  `Viceri Seidor` · Remoto, BR · remoto · nota 6
-- **[Estágio](https://br.indeed.com/viewjob?jk=b93e806b017b1e83)**  
-  `Wnog Cursos E Treinamentos` · Recanto das Emas, DF, BR · nota 6
-- **[SR Data Engineer (AWS)](https://br.indeed.com/viewjob?jk=9666f0056dfab6e0)**  
-  `_coderio` · Remoto, BR · remoto · nota 6
+- **[Analista BI Jr.](https://br.indeed.com/viewjob?jk=c3b249f92bd020c6)**  
+  `Saint-Gobain` · São Paulo, SP, BR · remoto · nota 6
+- **[Estágio em Desenvolvimento - Florianópolis SC](https://br.indeed.com/viewjob?jk=44c820dc349708e2)**  
+  `Software.Com.Br` · São Paulo, SP, BR · remoto · nota 6
+- **[DEV FULLSTACK .NET - JÚNIOR](https://br.indeed.com/viewjob?jk=d5ca1f483701b190)**  
+  `Squadra Technology` · Remoto, BR · nota 6
+- **[Analista de Recuperação de Crédito Júnior](https://br.indeed.com/viewjob?jk=b1366e2995aa878a)**  
+  `Unicred` · Remoto, BR · remoto · nota 6
 
-_… e mais 1_
+## 📋 Concursos (1)
+
+- **[EDITAL Nº 16 - CD/PLF, DE 4 DE SETEMBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-n-16-cd/plf-de-4-de-setembro-de-2026-730696562)**  
+  `Câmara dos Deputados` · nota 6
