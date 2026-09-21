@@ -1,53 +1,58 @@
-# 📡 Radar — 14 de setembro de 2026
+# 📡 Radar — 21 de setembro de 2026
 
-## 🎯 Estágios, trainee e júnior (22)
+## 🎯 Estágios, trainee e júnior (20)
 
-- **[Estágio – Suporte a Operações de Tecnologia da Informação](https://br.indeed.com/viewjob?jk=ef0bde154713c4e3)**  
-  `` · Brasília, DF, BR · nota 6
-- **[Analista de ERP](https://br.indeed.com/viewjob?jk=36c13dbda87ff483)**  
-  `` · Remoto, BR · remoto · nota 6
-- **[Software Engineer/Dev Fullstack](https://br.indeed.com/viewjob?jk=2babc2417e254a6a)**  
-  `` · Curitiba, PR, BR · nota 6
-- **[Desenvolvedor de Software Jr](https://br.indeed.com/viewjob?jk=8f303f6a6051b752)**  
-  `AL consultoria em RH` · Petrópolis, RJ, BR · nota 6
-- **[Analista Júnior de Telecomunicações](https://br.indeed.com/viewjob?jk=aee4b5957683e02f)**  
-  `Accenture` · Rio de Janeiro, RJ, BR · remoto · nota 6
-- **[Vaga de Estágio - Tecnologia da Informação - DF2026000436](https://br.indeed.com/viewjob?jk=a5014d2cbd0c152d)**  
-  `Agiel` · DF, BR · nota 6
-- **[Analista de Negócios de Integração – Junior](https://br.indeed.com/viewjob?jk=bc0d7a61350a6583)**  
-  `Animati` · Remoto, BR · remoto · nota 6
-- **[DBA SQL Server Pl-Sr](https://br.indeed.com/viewjob?jk=6b7391a918052b7c)**  
-  `GLOBALSYS.COM.BR` · Remoto, BR · remoto · nota 6
-- **[Designer Instrucional Júnior (CLT) | Remoto](https://br.indeed.com/viewjob?jk=21c6f390d5ff5fdf)**  
-  `Gran` · Remoto, BR · remoto · nota 6
-- **[Estágio em Growth](https://br.indeed.com/viewjob?jk=c1078d372b26b10a)**  
-  `Gringo & Zapay` · Remoto, BR · remoto · nota 6
-- **[Desenvolvedor Fullstack VTEX Júnior](https://br.indeed.com/viewjob?jk=e7bf0a8299c0af96)**  
-  `Growdev` · Remoto, BR · remoto · nota 6
-- **[Profissional Analista de Qualidade Júnior - Remoto](https://br.indeed.com/viewjob?jk=e0a3fe2c3f01a4dd)**  
-  `Luby` · Remoto, BR · remoto · nota 6
-- **[Profissional Fullstack (IA/Javascript) Trainee/Júnior - Remoto](https://br.indeed.com/viewjob?jk=553ff80e554c6463)**  
-  `Luby` · Remoto, BR · remoto · nota 6
-- **[Desenvolvedor Full Stack JR (JAVA)](https://br.indeed.com/viewjob?jk=2ff090ae48f266d9)**  
-  `Nexti` · Remoto, BR · remoto · nota 6
-- **[Analista Júnior de Automação com IA e Agentes](https://br.indeed.com/viewjob?jk=c07d3d4b05fce4de)**  
-  `OSC MARITIMO` · Rio de Janeiro, RJ, BR · nota 6
-- **[Estágio em Desenvolvimento de Software](https://br.indeed.com/viewjob?jk=2f531ff592e1727b)**  
-  `PONTOTEL` · São Paulo, SP, BR · remoto · nota 6
-- **[Desenvolvedor Full Stack - JR](https://br.indeed.com/viewjob?jk=e32f01d9f6566b0e)**  
-  `ProThera Inc` · Remoto, BR · remoto · nota 6
-- **[Cientista de Dados Júnior](https://br.indeed.com/viewjob?jk=edb37a6202f7942d)**  
-  `STARTA` · Porto Alegre, RS, BR · remoto · nota 6
-- **[Analista BI Jr.](https://br.indeed.com/viewjob?jk=c3b249f92bd020c6)**  
-  `Saint-Gobain` · São Paulo, SP, BR · remoto · nota 6
-- **[Estágio em Desenvolvimento - Florianópolis SC](https://br.indeed.com/viewjob?jk=44c820dc349708e2)**  
-  `Software.Com.Br` · São Paulo, SP, BR · remoto · nota 6
-- **[DEV FULLSTACK .NET - JÚNIOR](https://br.indeed.com/viewjob?jk=d5ca1f483701b190)**  
-  `Squadra Technology` · Remoto, BR · nota 6
-- **[Analista de Recuperação de Crédito Júnior](https://br.indeed.com/viewjob?jk=b1366e2995aa878a)**  
-  `Unicred` · Remoto, BR · remoto · nota 6
+- **[Software Engineer \[Plataforma e Integrações\]](https://br.indeed.com/viewjob?jk=4354097a5c74744b)**  
+  `Appmax` · Remoto, BR · remoto · nota 6
+- **[Estagiário de Serviços](https://br.indeed.com/viewjob?jk=13d1aaabcce9c35d)**  
+  `Associação Brasileira de Recursos em Telecomunicações` · Brasília, DF, BR · nota 6
+- **[Pessoa Analista de Investimentos Júnior](https://br.indeed.com/viewjob?jk=47ea2068eddfd87e)**  
+  `BT Créditos` · São Paulo, SP, BR · remoto · nota 6
+- **[Desenvolvedor(a) Fullstack Backend - Trainee](https://br.indeed.com/viewjob?jk=57c25c44b40b19fa)**  
+  `CONFITEC` · Remoto, BR · remoto · nota 6
+- **[Software Development Engineer](https://br.indeed.com/viewjob?jk=34983773d83937a2)**  
+  `CSG` · Remoto, BR · remoto · nota 6
+- **[Desenvolvedor Oracle APEX](https://br.indeed.com/viewjob?jk=34a81f8e411b3771)**  
+  `Certsys` · Remoto, BR · remoto · nota 6
+- **[Pessoa Desenvolvedora Drupal - Estágio (Modelo Híbrido)](https://br.indeed.com/viewjob?jk=c6b4d66cb0da7a6a)**  
+  `DTI Digital` · Belo Horizonte, MG, BR · nota 6
+- **[Estágio em Agricultura e Acesso a Mercados - Embaixada Britânica em Brasília](https://br.indeed.com/viewjob?jk=ba5bffb04cb6d30d)**  
+  `Embaixada Britânica` · Brasília, DF, BR · remoto · nota 6
+- **[Desenvolvedor Back-end Java Jr - Payments](https://br.indeed.com/viewjob?jk=11ff4de67d77e35e)**  
+  `Estapar` · Remoto, BR · remoto · nota 6
+- **[Desenvolvedor (Java I Python) Junior](https://br.indeed.com/viewjob?jk=28ad982b28dcf6a0)**  
+  `Insi` · Remoto, BR · remoto · nota 6
+- **[\[Campus Monks\] Data Analytics Intern](https://br.indeed.com/viewjob?jk=0ed26032d48d6756)**  
+  `Monks` · São Paulo, SP, BR · remoto · nota 6
+- **[Estágio de Processos](https://br.indeed.com/viewjob?jk=4a533c961ca7d9a2)**  
+  `Radix Engenharia e Software` · Remoto, BR · remoto · nota 6
+- **[CAS | Engenharia de Dados de Auditoria Interna PL](https://br.indeed.com/viewjob?jk=b7ec62f8cc8642fc)**  
+  `Sicredi` · Porto Alegre, RS, BR · remoto · nota 6
+- **[Pessoa Desenvolvedora Mobile - Júnior](https://br.indeed.com/viewjob?jk=d2a54a0c3352f0cb)**  
+  `SmartTravel` · Remoto, BR · remoto · nota 6
+- **[Estágio Superior em Engenharia química (H/M/X)](https://br.indeed.com/viewjob?jk=228ceb8ef09a878c)**  
+  `Solvay` · Paulínia, SP, BR · remoto · nota 6
+- **[Estágio Financeiro](https://br.indeed.com/viewjob?jk=29df4412f2ba0350)**  
+  `Somnis Consulting` · Campinas, SP, BR · remoto · nota 6
+- **[Auxiliar de Atendimento Logístico - CNH B (Carro) | Belo Horizonte/MG \[Noturno\]](https://br.indeed.com/viewjob?jk=f9c1b37567d609e8)**  
+  `Stone` · Belo Horizonte, MG, BR · remoto · nota 6  
+  ⚠️ empresa alvo
+- **[Associado(a) de Gestão de Projetos de TI (1 vaga) (Home Based) - \[Open to internal and external applicants\]](https://br.indeed.com/viewjob?jk=04a351734f66d327)**  
+  `United Nations Development Programme` · Brasília, DF, BR · nota 6
+- **[PESSOA DESENVOLVEDORA AUTOMAÇÃO JÚNIOR - RPA](https://br.indeed.com/viewjob?jk=0bb0586ac5b47b48)**  
+  `YDUQS` · Rio de Janeiro, RJ, BR · remoto · nota 6
+- **[Engineering l Software Engineer](https://br.indeed.com/viewjob?jk=cf5558d7f682a8fe)**  
+  `ＡＬＩＣＥ` · Remoto, BR · remoto · nota 6
 
-## 📋 Concursos (1)
+## 📋 Concursos (5)
 
-- **[EDITAL Nº 16 - CD/PLF, DE 4 DE SETEMBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-n-16-cd/plf-de-4-de-setembro-de-2026-730696562)**  
+- **[COMISSÃO PERMANENTE DE CONTRATAÇÕES](https://www.in.gov.br/web/dou/-/comissao-permanente-de-contratacoes-732348463)**  
   `Câmara dos Deputados` · nota 6
+- **[AVISO DE LICITAÇÃO](https://www.in.gov.br/web/dou/-/aviso-de-licitacao-732488522)**  
+  `Instituto Federal de Educação, Ciência e Tecnologia de São P` · nota 6
+- **[EDITAL Nº 1/2026](https://www.in.gov.br/web/dou/-/edital-n-1/2026-731664520)**  
+  `Secretaria Especial da Receita Federal do Brasil` · nota 6
+- **[EDITAL Nº 37 STJ, DE 15 DE SETEMBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-n-37-stj-de-15-de-setembro-de-2026-732082031)**  
+  `Superior Tribunal de Justiça` · nota 6
+- **[EDITAL Nº 6/2026](https://www.in.gov.br/web/dou/-/edital-n-6/2026-733087492)**  
+  `Universidade Federal do Estado do Rio de Janeiro` · nota 6
