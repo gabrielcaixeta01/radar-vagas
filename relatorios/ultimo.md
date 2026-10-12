@@ -1,63 +1,67 @@
-# 📡 Radar — 28 de setembro de 2026
+# 📡 Radar — 12 de outubro de 2026
 
-## 🎯 Estágios, trainee e júnior (24)
+## 🎯 Estágios, trainee e júnior (34)
 
-- **[Estágio em Arquitetura e Urbanismo](https://br.indeed.com/viewjob?jk=a46efe18e827bc81)**  
-  `` · Brasília, DF, BR · nota 6
-- **[Vaga de Estágio - Setor Financeiro - 100% Presencial](https://br.indeed.com/viewjob?jk=6cb39d356e4c06f3)**  
-  `` · Brasília, DF, BR · nota 6
-- **[Desenvolvedor de Aplicações Júnior – Sistemas de Crédito PF](https://br.indeed.com/viewjob?jk=499cb9e95d954bdc)**  
-  `CENTRO COOPERATIVO SICOOB` · Brasília, DF, BR · nota 6
-- **[Analista de Modeleagem de Riscos - Junior](https://br.indeed.com/viewjob?jk=4fa2146247fe952a)**  
-  `CENTRO COOPERATIVO SICOOB` · Brasília, DF, BR · nota 6
-- **[\[Job-31711\] AI Engineer Agentic SDLC, Brazil](https://br.indeed.com/viewjob?jk=d83ea8c01d3c6ccd)**  
-  `Ci&T` · Remoto, BR · remoto · nota 6
-- **[Estágio de Agropecuária - Seara | Brasília - DF](https://br.indeed.com/viewjob?jk=993d7c311e3331f4)**  
-  `Estágio JBS` · Brasília, DF, BR · nota 6
-- **[Desenvolvedor Backend Júnior C# / .NET](https://br.indeed.com/viewjob?jk=9e455e565eb371b9)**  
-  `Extractta` · Remoto, BR · remoto · nota 6
-- **[Fullstack AI Engineer - (JR/PL)](https://br.indeed.com/viewjob?jk=cce53046695bfc89)**  
-  `FCamara` · Remoto, BR · remoto · nota 6
-- **[Analista Desenvolvedor - Junior](https://br.indeed.com/viewjob?jk=6a2a7b7ee26a3a67)**  
-  `Geopixel` · Remoto, BR · remoto · nota 6
-- **[Estágio em Remuneração e Benefícios](https://br.indeed.com/viewjob?jk=8b7472a9cdd2e120)**  
-  `Hepta` · Brasília, DF, BR · nota 6
-- **[Desenvolvedor de Automação e IA Jr](https://br.indeed.com/viewjob?jk=7d3c40efbed276ad)**  
-  `Libbs Farmacêutica Ltda` · Remoto, BR · remoto · nota 6
-- **[Desenvolvedor(a) Backend Júnior](https://br.indeed.com/viewjob?jk=3c717f78037d681e)**  
-  `Lina Infratech` · São Paulo, SP, BR · remoto · nota 6
-- **[Network Cloud Security Specialist](https://br.indeed.com/viewjob?jk=e33ae181dbd2d632)**  
-  `Neon Pagamentos` · Remoto, BR · remoto · nota 6
-- **[Operations Engineer, Intern](https://br.indeed.com/viewjob?jk=c323137e546f3db4)**  
-  `PPRO` · São Paulo, SP, BR · remoto · nota 6
-- **[Data Engineer](https://br.indeed.com/viewjob?jk=3c3ef5911edadbc0)**  
-  `Pantheon Inc` · Remoto, BR · remoto · nota 6
-- **[Estágio em Engenharia Ambiental - FUNASA/DF](https://br.indeed.com/viewjob?jk=852829fa48491c96)**  
-  `Recruta Easy` · Brasília, DF, BR · nota 6
-- **[Estágio em Engenharia, Arquitetura, Geologia ou Administração - FUNASA/DF](https://br.indeed.com/viewjob?jk=49503d1d46a775ea)**  
-  `Recruta Easy` · Brasília, DF, BR · nota 6
-- **[Estáagio | TI, Ciências da Computação, ADS...](https://br.indeed.com/viewjob?jk=23f8ca0d2b8088cd)**  
-  `STAG - Central de Estágios` · Brasília, DF, BR · nota 6
-- **[Product Management Intern](https://br.indeed.com/viewjob?jk=40ff933eb6195932)**  
-  `Sezzle` · São Paulo, SP, BR · remoto · nota 6
-- **[Estágio em Controle e Processos](https://br.indeed.com/viewjob?jk=7675049d0b26ec7d)**  
-  `TAGNA Tecnologia` · Belo Horizonte, MG, BR · remoto · nota 6
-- **[Estágio em Tecnologia / Automação de Processos](https://br.indeed.com/viewjob?jk=0c27f3ca89a198b9)**  
-  `Valeo` · Campinas, SP, BR · nota 6
-- **[Estágio | FinOps](https://br.indeed.com/viewjob?jk=ff0272c16794d98b)**  
-  `domoinovacao` · Remoto, BR · remoto · nota 6
-- **[Estágio em Engenharia Ambiental - FUNASA/DF](https://br.indeed.com/viewjob?jk=d781ba352d686add)**  
-  `Água Céu Azul` · Brasília, DF, BR · nota 6
-- **[Estágio em Engenharia, Arquitetura, Geologia ou Administração - FUNASA/DF](https://br.indeed.com/viewjob?jk=d4749f9484ffbef2)**  
-  `Água Céu Azul` · Brasília, DF, BR · nota 6
+- **[Estagiário(a) Financeiro](https://br.indeed.com/viewjob?jk=a41013a7fe942629)**  
+  `#VEMPRAIT4US` · Remoto, Brazil · remoto · nota 6
+- **[Analista de Testes - Estágio](https://br.indeed.com/viewjob?jk=daaf3a7ffccc3bfa)**  
+  `AZ Tecnologia em Gestão` · Campo Grande, MS, Brazil · remoto · nota 6
+- **[Analista de Implantação Júnior](https://br.indeed.com/viewjob?jk=1413dfcb6a3d852f)**  
+  `Animati` · Remoto, Brazil · remoto · nota 6
+- **[ANALISTA PLANEJAMENTO FINANCEIRO JR - MTZ](https://br.indeed.com/viewjob?jk=e0f20a6bb000b36e)**  
+  `Azul Linhas Aereas Brasileiras` · Remoto, Brazil · remoto · nota 6
+- **[\[Remoto\] Desenvolvedor(a) Fullstack Junior](https://br.indeed.com/viewjob?jk=5dee310f29be89bd)**  
+  `BBChain` · São Paulo, SP, Brazil · remoto · nota 6
+- **[Analista de Inteligência de Dados - Júnior](https://br.indeed.com/viewjob?jk=81288438889e2c5e)**  
+  `CENTRO COOPERATIVO SICOOB` · Brasília, DF, Brazil · nota 6
+- **[Analista de transportes Jr](https://br.indeed.com/viewjob?jk=fec8d3c546de4f28)**  
+  `DHL` · Brasília, DF, Brazil · nota 6
+- **[Estagiário da Gerência de Acompanhamento de UEs](https://br.indeed.com/viewjob?jk=981689fe9e3d29f5)**  
+  `EMBRAPII` · Brasília, DF, Brazil · nota 6
+- **[Desenvolvedor Back-end Java Jr - Seguros](https://br.indeed.com/viewjob?jk=e828b03742ae6d43)**  
+  `Estapar` · Remoto, Brazil · remoto · nota 6
+- **[Desenvolvedor Back-end Java Jr - TAG](https://br.indeed.com/viewjob?jk=43a91b221041c396)**  
+  `Estapar` · Remoto, Brazil · remoto · nota 6
+- **[Desenvolvedor Full Stack java - Junior](https://br.indeed.com/viewjob?jk=5f1e6662ec9919c2)**  
+  `FCamara` · Remoto, Brazil · remoto · nota 6
+- **[Estagiário de Relações Governamentais - 100% Presencial - 4º ao 6º semestre](https://br.indeed.com/viewjob?jk=a960a346bc37d115)**  
+  `FIGUEIREDO & VELLOSO ADVOGADOS ASSOCIADOS S/S` · Brasília, DF, Brazil · nota 6
+- **[Analista Designer UX / Produto – Júnior](https://br.indeed.com/viewjob?jk=fae83d4890d51a5a)**  
+  `Geopixel` · Remoto, Brazil · remoto · nota 6
+- **[SOFT - Inatel Developer Program - IDP](https://br.indeed.com/viewjob?jk=9f4bb9e5552012b8)**  
+  `Inatel` · Remoto, Brazil · remoto · nota 6
+- **[ESTÁGIO EM DESENVOLVIMENTO C/C++](https://br.indeed.com/viewjob?jk=b3ba29b61d66c78d)**  
+  `Jedis Tecnologia` · Jundiaí, SP, Brazil · remoto · nota 6
+- **[ESTAGIÁRIO NA ÁREA DE GESTÃO DE POLITICAS PUBLICAS - Asa Sul - Sem experiência (CIDE - Capacitação Inserção e ](https://br.indeed.com/viewjob?jk=edd92b8b82662300)**  
+  `Jobbol` · Brasília, DF, Brazil · nota 6
+- **[Business Transformation & AI I Gestão, Processos e Operações](https://br.indeed.com/viewjob?jk=750296d4abebdf00)**  
+  `MOURA'S RH` · Remoto, Brazil · remoto · nota 6
+- **[CGU - Controladoria Geral da União - Estágio em Graduação na área de TI](https://br.indeed.com/viewjob?jk=8dfc4e663d4b3c1c)**  
+  `Mais Estágios` · Brasília, DF, Brazil · nota 6
+- **[INCRA Sede DF - Instituto Nacional de Colonização e Reforma Agrária - Estágio em Ciências Contábeis](https://br.indeed.com/viewjob?jk=f6f700aef3a31e98)**  
+  `Mais Estágios` · Brasília, DF, Brazil · nota 6
+- **[INCRA Sede DF - Instituto Nacional de Colonização e Reforma Agrária - Estágio em Direito](https://br.indeed.com/viewjob?jk=553b569213220c41)**  
+  `Mais Estágios` · Brasília, DF, Brazil · nota 6
+- **[INCRA Sede DF - Instituto Nacional de Colonização e Reforma Agrária - Estágio em Relações Internacionais](https://br.indeed.com/viewjob?jk=6392008cfe49584b)**  
+  `Mais Estágios` · Brasília, DF, Brazil · nota 6
+- **[INCRA Sede DF - Instituto Nacional de Colonização e Reforma Agrária - Estágio em Museologia](https://br.indeed.com/viewjob?jk=50248168978185e4)**  
+  `Mais Estágios` · Brasília, DF, Brazil · nota 6
+- **[\[Campus Monks\] Estágio em Conteúdo](https://br.indeed.com/viewjob?jk=988019f5da8780a2)**  
+  `Monks` · São Paulo, SP, Brazil · remoto · nota 6
+- **[Head de Inteligência Artificial | Remoto](https://br.indeed.com/viewjob?jk=b0f7b7edc055dab9)**  
+  `NSTECH` · Remoto, Brazil · remoto · nota 6
+- **[Nube | Oportunidade de Estágio em Geologia - 381415](https://br.indeed.com/viewjob?jk=2a089b0536f1e286)**  
+  `Nube - Vagas` · São Paulo, SP, Brazil · remoto · nota 6
+
+_… e mais 9_
 
 ## 📋 Concursos (4)
 
-- **[EXTRATO DE TERMO ADITIVO - UASG 238014](https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-uasg-238014-733314768)**  
-  `Empresa de Tecnologia e Informações da Previdência` · nota 6
-- **[EDITAL Nº 4/2026](https://www.in.gov.br/web/dou/-/edital-n-4/2026-735066102)**  
-  `Universidade Federal do Estado do Rio de Janeiro` · nota 6
-- **[EDITAL Nº 4/2026](https://www.in.gov.br/web/dou/-/edital-n-4/2026-734328213)**  
-  `Universidade Federal do Estado do Rio de Janeiro` · nota 6
-- **[EDITAL Nº 4/2026](https://www.in.gov.br/web/dou/-/edital-n-4/2026-733358095)**  
+- **[EDITAL CGU Nº 1, DE 8 DE OUTUBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-cgu-n-1-de-8-de-outubro-de-2026-737675154)**  
+  `Secretaria Executiva` · nota 6
+- **[EDITAL Nº 52 CPNUJE, DE 5 DE OUTUBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-n-52-cpnuje-de-5-de-outubro-de-2026-737387064)**  
+  `Tribunal Superior Eleitoral` · nota 6
+- **[EDITAL Nº 53 - CPNUJE, DE 6 DE OUTUBRO DE 2026](https://www.in.gov.br/web/dou/-/edital-n-53-cpnuje-de-6-de-outubro-de-2026-737430635)**  
+  `Tribunal Superior Eleitoral` · nota 6
+- **[EDITAL Nº 36/2026](https://www.in.gov.br/web/dou/-/edital-n-36/2026-736747441)**  
   `Universidade Federal do Estado do Rio de Janeiro` · nota 6
