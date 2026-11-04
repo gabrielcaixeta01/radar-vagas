@@ -1,5 +1,6 @@
 from .base import Coletor, coletar_todos
 from .dou import DOUColetor
+from .greenhouse import GreenhouseColetor
 from .vagas import VagasColetor
 
 # querido-diario foi REMOVIDO: a API tem o DF na base (territory 5300108,
@@ -8,6 +9,7 @@ from .vagas import VagasColetor
 # Ver README (secao "Fontes descartadas") antes de tentar reativar.
 REGISTRO: dict[str, type[Coletor]] = {
     "vagas": VagasColetor,
+    "greenhouse": GreenhouseColetor,
     "dou": DOUColetor,
 }
 

@@ -123,6 +123,26 @@ estagio:
     prioridade: [DF, Brasilia, Distrito Federal]
     aceitar_fora_do_df_apenas_se_remoto: true
 
+# Vagas direto do ATS das empresas (API publica do Greenhouse, sem token).
+# Validado em 04/11/2026. Para testar um board novo:
+#   curl -s https://boards-api.greenhouse.io/v1/boards/NOME/jobs | head -c 300
+greenhouse:
+  boards:
+    - {board: btgpactual, empresa: BTG Pactual}
+    - {board: xpinc, empresa: XP Inc}
+    - {board: inter, empresa: Banco Inter}
+    - {board: c6bank, empresa: C6 Bank}
+    - {board: stone, empresa: Stone}
+    - {board: ebanx, empresa: EBANX}
+    - {board: quintoandar, empresa: QuintoAndar}
+    - {board: vtex, empresa: VTEX}
+    - {board: nubank, empresa: Nubank}   # board existe mas estava vazio em 04/11
+  # O board traz todos os niveis (BTG tem ~250 vagas). Diferente do Indeed,
+  # aqui nao ha termo de busca, entao exige sinal de entrada NO TITULO.
+  titulos_entrada:
+    [estagio, estagiario, estagiaria, intern, internship, trainee, junior, jr,
+     "entry level", graduate, assistente, "short job", "banco de talentos"]
+
 concursos:
   # Orgaos com carreira de TI ou de financas. Sao esses que o filtro exige.
   orgaos:
