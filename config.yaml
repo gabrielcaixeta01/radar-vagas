@@ -7,6 +7,23 @@
 
 escolaridade: [medio, superior]   # 7o semestre: nivel medio ja; superior com posse pos-formatura
 
+# Curriculo e o que o ranking compara com cada vaga.
+perfil:
+  curriculo: perfil/curriculo.md   # vai inteiro no prompt do LLM
+  # Usados so quando o LLM esta desligado/indisponivel: nota = quantos destes
+  # aparecem na vaga. Tirados do curriculo — atualize junto com ele.
+  competencias:
+    [python, sql, "c++", typescript, javascript, react, next.js, nextjs,
+     scikit-learn, sklearn, pandas, numpy, matplotlib, power bi, power apps,
+     machine learning, "aprendizado de maquina", ciencia de dados,
+     data science, engenharia de features, feature engineering,
+     modelagem preditiva, api, automacao, testes, qa, homologacao,
+     llm, ia generativa, generative ai, claude]
+  termos_trilha:
+    [dados, data, analytics, "business intelligence", bi, machine learning,
+     inteligencia artificial, ia, artificial intelligence, risco de credito, credit risk,
+     quantitativo, quant, churn, backend, full stack, fullstack]
+
 estagio:
   # Trilhas prioritarias, em ordem. Entra no prompt do ranking.
   prioridades:
@@ -117,6 +134,7 @@ estagio:
      arquiteto, ii, iii, iv, mid, "mid-level", intermediate]
 
   formatura_prevista: "2028-07"
+
   peso_efetivacao: alto        # sinais: "efetivacao", "programa de estagio", duracao >= 12 meses
 
   local:
@@ -193,7 +211,9 @@ concursos:
   alerta_prazo_dias: 7         # avisa quando a inscricao fecha em <= N dias
 
 ranking:
-  usar_llm: false
-  modelo: claude-haiku-4-5
+  # Com ANTHROPIC_API_KEY: LLM compara cada vaga com o curriculo.
+  # Sem a chave (ou com --sem-llm): nota por palavras do CV, custo zero.
+  usar_llm: true
+  modelo: claude-haiku-5-5     # US$ 0,10/0,50 por M tokens: ~40 vagas/semana ~ US$ 0,02
   nota_minima: 6               # abaixo disso nao entra no relatorio
-  max_itens_por_secao: 25
+  max_itens_por_secao: 20
