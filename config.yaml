@@ -111,9 +111,10 @@ estagio:
   # Checado SO no titulo da vaga (na descricao "senior" aparece por acidente,
   # ex.: "reporta ao desenvolvedor senior"). Corta vaga que nao e de entrada.
   titulos_negativos:
-    [senior, "sênior", " sr", pleno, especialista, "tech lead", lead,
-     coordenador, gerente, supervisor, "head of", principal, staff,
-     arquiteto, "iii", "iv"]
+  # Casa por palavra inteira ("pl" nao corta "planejamento").
+    [senior, "sênior", sr, pleno, pl, especialista, "tech lead", lead,
+     coordenador, gerente, manager, supervisor, "head of", principal, staff,
+     arquiteto, ii, iii, iv, mid, "mid-level", intermediate]
 
   formatura_prevista: "2028-07"
   peso_efetivacao: alto        # sinais: "efetivacao", "programa de estagio", duracao >= 12 meses

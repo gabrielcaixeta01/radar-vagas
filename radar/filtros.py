@@ -7,6 +7,7 @@ item que voce nao paga para o modelo ler.
 from __future__ import annotations
 
 import logging
+import re
 import unicodedata
 
 from .models import Oportunidade
@@ -22,6 +23,12 @@ def normalizar(txt: str) -> str:
 
 def _tem(texto: str, termos: list[str]) -> bool:
     return any(normalizar(t) in texto for t in termos)
+
+
+def tem_palavra(texto: str, termos: list[str]) -> bool:
+    """Como _tem, mas com borda de palavra: "pl" nao casa em "planejamento"."""
+    return any(re.search(rf"(?<![a-z0-9]){re.escape(normalizar(t).strip())}(?![a-z0-9])",
+                         texto) for t in termos)
 
 
 def filtrar(itens: list[Oportunidade], cfg: dict) -> list[Oportunidade]:
@@ -41,7 +48,7 @@ def _passa_estagio(o: Oportunidade, cfg: dict) -> bool:
 
     # Nivel do cargo sai do titulo, nao do texto todo: a descricao cita
     # "senior"/"lead" o tempo todo sem que a vaga seja senior.
-    if _tem(normalizar(o.titulo), est.get("titulos_negativos", [])):
+    if tem_palavra(normalizar(o.titulo), est.get("titulos_negativos", [])):
         return False
     if _tem(texto, est["keywords_negativas"]):
         return False
