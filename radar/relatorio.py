@@ -95,6 +95,14 @@ def _secao_html(titulo: str, itens: list[Oportunidade], limite: int) -> list[str
 
 # --- entrada publica ------------------------------------------------------
 
+def assunto(novos: list[Oportunidade]) -> str:
+    hoje = date.today()
+    n = len(novos)
+    top = max((o.nota or 0 for o in novos), default=0)
+    resumo = f"{n} vaga(s) nova(s), melhor nota {top}" if n else "nada novo"
+    return f"📡 Radar de vagas — {hoje.day} de {MESES[hoje.month]}: {resumo}"
+
+
 def montar(novos: list[Oportunidade], fechando: list[Oportunidade],
            cfg: dict, formato: str = "markdown") -> str:
     hoje = date.today()

@@ -1,9 +1,9 @@
 """Ponto de entrada.
 
-    python -m radar --dry-run --sem-llm      # imprime no terminal, nao grava
-    python -m radar --fonte gupy --dry-run   # testa um coletor isolado
-    python -m radar                          # gera relatorios/AAAA-MM-DD.md
-    python -m radar --destino telegram       # envia no Telegram (opcional)
+    python -m radar --dry-run --sem-llm          # imprime no terminal, nao grava
+    python -m radar --fonte greenhouse --dry-run # testa um coletor isolado
+    python -m radar                              # gera relatorios/AAAA-MM-DD.md
+    python -m radar --destino arquivo,email      # o que o Actions roda na segunda
 """
 
 from __future__ import annotations
@@ -20,13 +20,21 @@ def main() -> int:
     p = argparse.ArgumentParser(prog="radar")
     p.add_argument("--dry-run", action="store_true",
                    help="imprime no terminal sem gravar arquivo nem estado")
-    p.add_argument("--fonte", help="roda so um coletor (gupy, dou, querido-diario)")
-    p.add_argument("--sem-llm", action="store_true", help="pula o ranking")
+    p.add_argument("--fonte", help="roda so um coletor (vagas, greenhouse, dou)")
+    p.add_argument("--sem-llm", action="store_true",
+                   help="ranking por palavras do CV, sem chamar a API")
     p.add_argument("--destino", default="arquivo",
-                   choices=["arquivo", "telegram", "ambos"],
-                   help="onde entregar o relatorio (padrao: arquivo)")
+                   help="onde entregar, separado por virgula: arquivo, email, "
+                        "telegram (padrao: arquivo). Ex.: --destino arquivo,email")
     p.add_argument("-v", "--verbose", action="store_true")
     args = p.parse_args()
+
+    destinos = {d.strip() for d in args.destino.split(",") if d.strip()}
+    if "ambos" in destinos:  # compatibilidade com a opcao antiga
+        destinos = (destinos - {"ambos"}) | {"arquivo", "telegram"}
+    invalidos = destinos - {"arquivo", "email", "telegram"}
+    if invalidos:
+        p.error(f"destino desconhecido: {', '.join(sorted(invalidos))}")
 
     logging.basicConfig(
         level=logging.DEBUG if args.verbose else logging.INFO,
@@ -71,16 +79,23 @@ def main() -> int:
         return 0
 
     ok = True
-    if args.destino in ("arquivo", "ambos"):
+    if "arquivo" in destinos:
         saida.salvar_arquivo(texto_md, config.PASTA_RELATORIOS)
         saida.escrever_resumo_actions(texto_md)
 
-    if args.destino in ("telegram", "ambos"):
+    texto_html = relatorio.montar(aprovados, fechando, cfg, formato="html")
+
+    if "email" in destinos:
+        from .correio import enviar_email
+        ok = enviar_email(relatorio.assunto(aprovados), texto_md, texto_html) and ok
+
+    if "telegram" in destinos:
         from .notificacao import enviar_telegram
-        texto_html = relatorio.montar(aprovados, fechando, cfg, formato="html")
-        ok = enviar_telegram(texto_html)
+        ok = enviar_telegram(texto_html) and ok
 
     if not ok:
+        # Estado nao e salvo: na proxima execucao as mesmas vagas voltam,
+        # em vez de serem marcadas como vistas sem voce ter recebido.
         return 1
 
     dedup.salvar(config.CAMINHO_ESTADO, vistos, itens)

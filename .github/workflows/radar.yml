@@ -27,12 +27,22 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
+      # Secrets (Settings -> Secrets and variables -> Actions):
+      #   SMTP_USER, SMTP_PASSWORD  obrigatorios para o e-mail (senha de app do Gmail)
+      #   EMAIL_TO                  opcional; padrao = SMTP_USER
+      #   ANTHROPIC_API_KEY         opcional; sem ele o ranking e por palavras do CV
+      # Se o e-mail falhar o job fica vermelho (o GitHub te avisa) e o estado
+      # nao e salvo, entao as mesmas vagas voltam na proxima execucao.
       - name: Rodar radar
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m radar
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m radar --destino arquivo,email
 
       - name: Commitar relatorio e estado
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
